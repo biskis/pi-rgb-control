@@ -1,0 +1,39 @@
+{
+  "name": "pi-rgb-control",
+  "version": "1.0.0",
+  "description": "Control RGB strip led from a Raspberry Pi using Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biskis/pi-rgb-control.git"
+  },
+  "keywords": [
+    "rgb",
+    "node.js",
+    "led",
+    "pi",
+    "raspberry"
+  ],
+  "author": "Daniel Dudas <danimdy@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/biskis/pi-rgb-control/issues"
+  },
+  "homepage": "https://github.com/biskis/pi-rgb-control#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.2",
+    "config": "^1.26.1",
+    "connect-timeout": "^1.9.0",
+    "express": "^4.15.3",
+    "moment": "^2.18.1",
+    "moment-timezone": "^0.5.13",
+    "morgan": "^1.8.2",
+    "node-json-db": "^0.7.3",
+    "pigpio": "^0.6.0",
+    "util": "^0.10.3"
+  }
+}

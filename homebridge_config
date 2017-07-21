@@ -1,0 +1,37 @@
+{
+    "bridge": {
+        "name": "Homebridge",
+        "username": "CC:22:3D:E3:CE:30",
+        "port": 51826,
+        "pin": "014-09-005"
+    },
+
+    "description": "This is raspberry pi Zero W Homebridge",
+
+    "accessories": [
+       {
+           "accessory": "HTTP-RGB",
+           "name": "RGB Led Strip",
+
+           "switch": {
+               "status": "http://192.168.0.20:8088/api/v1/rgb_strip/on_off_status",
+               "powerOn": "http://192.168.0.20:8088/api/v1/rgb_strip/on",
+               "powerOff": "http://192.168.0.20:8088/api/v1/rgb_strip/off"
+           },
+
+           "brightness": {
+               "status": "http://192.168.0.20:8088/api/v1/rgb_strip/brightness_status",
+               "url": "http://192.168.0.20:8088/api/v1/rgb_strip/brightness/%s"
+           },
+
+           "color": {
+               "status": "http://192.168.0.20:8088/api/v1/rgb_strip/color_status",
+               "url": "http://192.168.0.20:8088/api/v1/rgb_strip/color/%s"
+           }
+       }
+   ],
+
+    "platforms": [
+
+    ]
+}
